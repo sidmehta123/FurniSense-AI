@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -8,16 +9,30 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_page_config(page_title="Prediction Models", layout="wide")
 
+# --- THE BULLETPROOF FILE FINDER ---
 @st.cache_data
 def load_data():
-    return pd.read_csv("D2C_Furniture_Transactions.csv")
+    file_name = "D2C_Furniture_Transactions.csv"
+    
+    # 1. Check if it's in the main folder
+    if os.path.exists(file_name):
+        return pd.read_csv(file_name)
+    # 2. Check if it accidentally got put inside the pages folder
+    elif os.path.exists(f"pages/{file_name}"):
+        return pd.read_csv(f"pages/{file_name}")
+    # 3. Check for the double .csv extension typo
+    elif os.path.exists(f"{file_name}.csv"):
+        return pd.read_csv(f"{file_name}.csv")
+    else:
+        st.error(f"⚠️ CRITICAL ERROR: The app searched everywhere but cannot find {file_name}. Please make sure it is uploaded to GitHub!")
+        st.stop()
 
 df = load_data()
 
 st.title("🤖 Prediction Models (Machine Learning)")
 st.divider()
 
-# --- THE FIX: Scrub invisible spaces and force everything to lowercase ---
+# --- Scrub invisible spaces and force everything to lowercase ---
 df['Repeat_Purchase'] = df['Repeat_Purchase'].astype(str).str.strip().str.lower()
 df['City_Tier'] = df['City_Tier'].astype(str).str.strip()
 
@@ -28,7 +43,7 @@ le = LabelEncoder()
 X['City_Tier_Encoded'] = le.fit_transform(df['City_Tier'])
 features.append('City_Tier_Encoded')
 
-# Now it correctly maps 'yes' to 1 and 'no' to 0
+# Maps 'yes' to 1 and 'no' to 0
 y = df['Repeat_Purchase'].apply(lambda x: 1 if x == 'yes' else 0)
 
 # Failsafe check
