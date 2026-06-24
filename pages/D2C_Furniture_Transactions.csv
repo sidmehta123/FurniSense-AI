@@ -1,0 +1,96 @@
+Customer_ID,Age,Gender,City,City_Tier,Acquisition_Channel,Product_Category,Product_Price_INR,Discount_Applied_%,Final_Order_Value_INR,Delivery_Time_Days,Return_Status,Return_Reason,Satisfaction_Score,Repeat_Purchase,Previous_Orders
+CUST0001,34,Male,Mumbai,Tier 1,Instagram Ad,Sofa,31000.0,15.0,26350.0,5,No,,4,Yes,2
+CUST0002,28,Female,Delhi,Tier 1,Google Search,Bed,24500.0,10.0,22050.0,7,No,,4,Yes,1
+CUST0003,45,Male,Jaipur,Tier 2,Referral,Dining Set,36000.0,20.0,25920.0,12,No,,3,No,0
+CUST0004,52,Female,Bengaluru,Tier 1,Email Campaign,Décor,3200.0,5.0,3040.0,3,No,,5,Yes,4
+CUST0005,22,Male,Indore,Tier 2,Influencer,Storage Unit,15500.0,25.0,10462.5,14,Yes,Damaged,2,No,0
+CUST0006,38,Female,Pune,Tier 1,Instagram Ad,Sofa,29500.0,0.0,29500.0,6,No,,4,Yes,3
+CUST0007,41,Male,Lucknow,Tier 2,Google Search,Bed,26000.0,12.0,20592.0,18,Yes,Quality Issue,1,No,0
+CUST0008,29,Female,Surat,Tier 2,Referral,Décor,2900.0,10.0,2349.0,8,No,,4,Yes,1
+CUST0009,33,Male,Mumbai,Tier 1,Email Campaign,Dining Set,34000.0,15.0,28900.0,5,No,,5,Yes,2
+CUST0010,47,Female,Delhi,Tier 1,Influencer,Storage Unit,14800.0,5.0,14060.0,9,No,,3,Yes,1
+CUST0011,25,Male,Bengaluru,Tier 1,Instagram Ad,Bed,25500.0,20.0,20400.0,4,No,,5,Yes,5
+CUST0012,31,Female,Jaipur,Tier 2,Google Search,Sofa,30500.0,30.0,19215.0,15,Yes,Wrong Product,2,No,0
+CUST0013,55,Male,Pune,Tier 1,Referral,Dining Set,35500.0,10.0,31950.0,6,No,,4,Yes,2
+CUST0014,27,Female,Indore,Tier 2,Instagram Ad,Décor,3100.0,15.0,2371.5,11,No,,3,No,0
+CUST0015,39,Male,Lucknow,Tier 2,Email Campaign,Storage Unit,16000.0,20.0,11520.0,16,Yes,Changed Mind,2,No,1
+CUST0016,42,Female,Surat,Tier 2,Influencer,Sofa,29000.0,25.0,19575.0,8,No,,4,Yes,3
+CUST0017,24,Male,Mumbai,Tier 1,Google Search,Bed,24000.0,5.0,22800.0,3,No,,5,Yes,1
+CUST0018,36,Female,Delhi,Tier 1,Instagram Ad,Décor,3050.0,0.0,3050.0,5,No,,4,Yes,4
+CUST0019,49,Male,Bengaluru,Tier 1,Referral,Dining Set,36500.0,15.0,31025.0,7,No,,4,Yes,2
+CUST0020,26,Female,Jaipur,Tier 2,Email Campaign,Storage Unit,14500.0,10.0,11745.0,13,No,,3,No,0
+CUST0021,34,Male,Mumbai,Tier 1,Instagram Ad,Sofa,31000.0,15.0,26350.0,5,No,,4,Yes,2
+CUST0022,28,Female,Delhi,Tier 1,Google Search,Bed,24500.0,10.0,22050.0,7,No,,4,Yes,1
+CUST0023,45,Male,Jaipur,Tier 2,Referral,Dining Set,36000.0,20.0,25920.0,12,No,,3,No,0
+CUST0024,52,Female,Bengaluru,Tier 1,Email Campaign,Décor,3200.0,5.0,3040.0,3,No,,5,Yes,4
+CUST0025,22,Male,Indore,Tier 2,Influencer,Storage Unit,15500.0,25.0,10462.5,14,Yes,Damaged,2,No,0
+CUST0026,38,Female,Pune,Tier 1,Instagram Ad,Sofa,29500.0,0.0,29500.0,6,No,,4,Yes,3
+CUST0027,41,Male,Lucknow,Tier 2,Google Search,Bed,26000.0,12.0,20592.0,18,Yes,Quality Issue,1,No,0
+CUST0028,29,Female,Surat,Tier 2,Referral,Décor,2900.0,10.0,2349.0,8,No,,4,Yes,1
+CUST0029,33,Male,Mumbai,Tier 1,Email Campaign,Dining Set,34000.0,15.0,28900.0,5,No,,5,Yes,2
+CUST0030,47,Female,Delhi,Tier 1,Influencer,Storage Unit,14800.0,5.0,14060.0,9,No,,3,Yes,1
+CUST0031,25,Male,Bengaluru,Tier 1,Instagram Ad,Bed,25500.0,20.0,20400.0,4,No,,5,Yes,5
+CUST0032,31,Female,Jaipur,Tier 2,Google Search,Sofa,30500.0,30.0,19215.0,15,Yes,Wrong Product,2,No,0
+CUST0033,55,Male,Pune,Tier 1,Referral,Dining Set,35500.0,10.0,31950.0,6,No,,4,Yes,2
+CUST0034,27,Female,Indore,Tier 2,Instagram Ad,Décor,3100.0,15.0,2371.5,11,No,,3,No,0
+CUST0035,39,Male,Lucknow,Tier 2,Email Campaign,Storage Unit,16000.0,20.0,11520.0,16,Yes,Changed Mind,2,No,1
+CUST0036,42,Female,Surat,Tier 2,Influencer,Sofa,29000.0,25.0,19575.0,8,No,,4,Yes,3
+CUST0037,24,Male,Mumbai,Tier 1,Google Search,Bed,24000.0,5.0,22800.0,3,No,,5,Yes,1
+CUST0038,36,Female,Delhi,Tier 1,Instagram Ad,Décor,3050.0,0.0,3050.0,5,No,,4,Yes,4
+CUST0039,49,Male,Bengaluru,Tier 1,Referral,Dining Set,36500.0,15.0,31025.0,7,No,,4,Yes,2
+CUST0040,26,Female,Jaipur,Tier 2,Email Campaign,Storage Unit,14500.0,10.0,11745.0,13,No,,3,No,0
+CUST0041,35,Male,Mumbai,Tier 1,Instagram Ad,Sofa,31500.0,10.0,28350.0,5,No,,4,Yes,1
+CUST0042,29,Female,Delhi,Tier 1,Google Search,Bed,24000.0,15.0,20400.0,8,No,,4,Yes,2
+CUST0043,46,Male,Jaipur,Tier 2,Referral,Dining Set,35000.0,25.0,23625.0,14,Yes,Quality Issue,2,No,0
+CUST0044,53,Female,Bengaluru,Tier 1,Email Campaign,Décor,3100.0,0.0,3100.0,4,No,,5,Yes,3
+CUST0045,23,Male,Indore,Tier 2,Influencer,Storage Unit,15000.0,30.0,9450.0,16,Yes,Damaged,1,No,0
+CUST0046,39,Female,Pune,Tier 1,Instagram Ad,Sofa,29000.0,5.0,27550.0,7,No,,4,Yes,2
+CUST0047,42,Male,Lucknow,Tier 2,Google Search,Bed,25500.0,20.0,18360.0,19,Yes,Wrong Product,2,No,0
+CUST0048,30,Female,Surat,Tier 2,Referral,Décor,2800.0,15.0,2142.0,9,No,,4,Yes,1
+CUST0049,34,Male,Mumbai,Tier 1,Email Campaign,Dining Set,34500.0,10.0,31050.0,6,No,,5,Yes,3
+CUST0050,48,Female,Delhi,Tier 1,Influencer,Storage Unit,14500.0,15.0,11092.5,10,No,,3,Yes,2
+CUST0051,26,Male,Bengaluru,Tier 1,Instagram Ad,Bed,25000.0,25.0,18750.0,5,No,,5,Yes,4
+CUST0052,32,Female,Jaipur,Tier 2,Google Search,Sofa,30000.0,35.0,17550.0,17,Yes,Changed Mind,1,No,0
+CUST0053,54,Male,Pune,Tier 1,Referral,Dining Set,36000.0,5.0,34200.0,5,No,,4,Yes,3
+CUST0054,28,Female,Indore,Tier 2,Instagram Ad,Décor,3000.0,20.0,2160.0,12,No,,3,No,0
+CUST0055,40,Male,Lucknow,Tier 2,Email Campaign,Storage Unit,16500.0,15.0,12622.5,15,Yes,Damaged,2,No,1
+CUST0056,43,Female,Surat,Tier 2,Influencer,Sofa,28500.0,20.0,20520.0,9,No,,4,Yes,2
+CUST0057,25,Male,Mumbai,Tier 1,Google Search,Bed,24500.0,10.0,22050.0,4,No,,5,Yes,2
+CUST0058,37,Female,Delhi,Tier 1,Instagram Ad,Décor,3000.0,5.0,2850.0,6,No,,4,Yes,3
+CUST0059,50,Male,Bengaluru,Tier 1,Referral,Dining Set,37000.0,10.0,33300.0,8,No,,4,Yes,1
+CUST0060,27,Female,Jaipur,Tier 2,Email Campaign,Storage Unit,14000.0,15.0,10710.0,14,No,,3,No,0
+CUST0061,35,Male,Mumbai,Tier 1,Instagram Ad,Sofa,31000.0,15.0,26350.0,5,No,,4,Yes,2
+CUST0062,29,Female,Delhi,Tier 1,Google Search,Bed,24500.0,10.0,22050.0,7,No,,4,Yes,1
+CUST0063,46,Male,Jaipur,Tier 2,Referral,Dining Set,36000.0,20.0,25920.0,12,No,,3,No,0
+CUST0064,53,Female,Bengaluru,Tier 1,Email Campaign,Décor,3200.0,5.0,3040.0,3,No,,5,Yes,4
+CUST0065,23,Male,Indore,Tier 2,Influencer,Storage Unit,15500.0,25.0,10462.5,14,Yes,Damaged,2,No,0
+CUST0066,39,Female,Pune,Tier 1,Instagram Ad,Sofa,29500.0,0.0,29500.0,6,No,,4,Yes,3
+CUST0067,42,Male,Lucknow,Tier 2,Google Search,Bed,26000.0,12.0,20592.0,18,Yes,Quality Issue,1,No,0
+CUST0068,30,Female,Surat,Tier 2,Referral,Décor,2900.0,10.0,2349.0,8,No,,4,Yes,1
+CUST0069,34,Male,Mumbai,Tier 1,Email Campaign,Dining Set,34000.0,15.0,28900.0,5,No,,5,Yes,2
+CUST0070,48,Female,Delhi,Tier 1,Influencer,Storage Unit,14800.0,5.0,14060.0,9,No,,3,Yes,1
+CUST0071,26,Male,Bengaluru,Tier 1,Instagram Ad,Bed,25500.0,20.0,20400.0,4,No,,5,Yes,5
+CUST0072,32,Female,Jaipur,Tier 2,Google Search,Sofa,30500.0,30.0,19215.0,15,Yes,Wrong Product,2,No,0
+CUST0073,54,Male,Pune,Tier 1,Referral,Dining Set,35500.0,10.0,31950.0,6,No,,4,Yes,2
+CUST0074,28,Female,Indore,Tier 2,Instagram Ad,Décor,3100.0,15.0,2371.5,11,No,,3,No,0
+CUST0075,40,Male,Lucknow,Tier 2,Email Campaign,Storage Unit,16000.0,20.0,11520.0,16,Yes,Changed Mind,2,No,1
+CUST0076,43,Female,Surat,Tier 2,Influencer,Sofa,29000.0,25.0,19575.0,8,No,,4,Yes,3
+CUST0077,25,Male,Mumbai,Tier 1,Google Search,Bed,24000.0,5.0,22800.0,3,No,,5,Yes,1
+CUST0078,37,Female,Delhi,Tier 1,Instagram Ad,Décor,3050.0,0.0,3050.0,5,No,,4,Yes,4
+CUST0079,50,Male,Bengaluru,Tier 1,Referral,Dining Set,36500.0,15.0,31025.0,7,No,,4,Yes,2
+CUST0080,27,Female,Jaipur,Tier 2,Email Campaign,Storage Unit,14500.0,10.0,11745.0,13,No,,3,No,0
+CUST0081,35,Male,Mumbai,Tier 1,Instagram Ad,Sofa,31500.0,10.0,28350.0,5,No,,4,Yes,1
+CUST0082,29,Female,Delhi,Tier 1,Google Search,Bed,24000.0,15.0,20400.0,8,No,,4,Yes,2
+CUST0083,46,Male,Jaipur,Tier 2,Referral,Dining Set,35000.0,25.0,23625.0,14,Yes,Quality Issue,2,No,0
+CUST0084,53,Female,Bengaluru,Tier 1,Email Campaign,Décor,3100.0,0.0,3100.0,4,No,,5,Yes,3
+CUST0085,23,Male,Indore,Tier 2,Influencer,Storage Unit,15000.0,30.0,9450.0,16,Yes,Damaged,1,No,0
+CUST0086,39,Female,Pune,Tier 1,Instagram Ad,Sofa,29000.0,5.0,27550.0,7,No,,4,Yes,2
+CUST0087,42,Male,Lucknow,Tier 2,Google Search,Bed,25500.0,20.0,18360.0,19,Yes,Wrong Product,2,No,0
+CUST0088,30,Female,Surat,Tier 2,Referral,Décor,2800.0,15.0,2142.0,9,No,,4,Yes,1
+CUST0089,34,Male,Mumbai,Tier 1,Email Campaign,Dining Set,34500.0,10.0,31050.0,6,No,,5,Yes,3
+CUST0090,48,Female,Delhi,Tier 1,Influencer,Storage Unit,14500.0,15.0,11092.5,10,No,,3,Yes,2
+CUST0091,26,Male,Bengaluru,Tier 1,Instagram Ad,Bed,25000.0,25.0,18750.0,5,No,,5,Yes,4
+CUST0092,32,Female,Jaipur,Tier 2,Google Search,Sofa,30000.0,35.0,17550.0,17,Yes,Changed Mind,1,No,0
+CUST0093,54,Male,Pune,Tier 1,Referral,Dining Set,36000.0,5.0,34200.0,5,No,,4,Yes,3
+CUST0094,28,Female,Indore,Tier 2,Instagram Ad,Décor,3000.0,20.0,2160.0,12,No,,3,No,0
+CUST0095,40,Male,Lucknow,
