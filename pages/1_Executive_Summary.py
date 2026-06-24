@@ -12,6 +12,12 @@ def load_data():
 
 df = load_data()
 
+# ---------- LOGO ----------
+try:
+    st.image("logo.png", width=90)
+except:
+    pass
+
 # ---------- TITLE ----------
 st.title("📋 Executive Summary")
 st.markdown(
@@ -53,16 +59,22 @@ col1, col2 = st.columns(2)
 with col1:
     st.info("""
     **Customer Insights**
+    
     • Understand customer demographics
+    
     • Identify repeat purchase patterns
+    
     • Segment customers effectively
     """)
 
 with col2:
     st.success("""
     **Growth Strategy**
+    
     • Optimize acquisition channels
+    
     • Improve customer satisfaction
+    
     • Expand into high-performing cities
     """)
 
@@ -71,7 +83,11 @@ st.divider()
 # ---------- REVENUE BY PRODUCT ----------
 st.subheader("🪑 Revenue Contribution by Product Category")
 
-revenue_product = df.groupby("Product_Category")["Final_Order_Value_INR"].sum().reset_index()
+revenue_product = (
+    df.groupby("Product_Category")["Final_Order_Value_INR"]
+    .sum()
+    .reset_index()
+)
 
 fig = px.bar(
     revenue_product,
@@ -81,6 +97,7 @@ fig = px.bar(
     text_auto=True,
     title="Revenue by Product Category"
 )
+
 fig.update_layout(template="plotly_white", height=500)
 st.plotly_chart(fig, use_container_width=True)
 
@@ -97,6 +114,7 @@ fig2 = px.pie(
     hole=0.55,
     title="Tier 1 vs Tier 2 Customers"
 )
+
 fig2.update_layout(height=450)
 st.plotly_chart(fig2, use_container_width=True)
 
@@ -104,6 +122,7 @@ st.divider()
 
 # ---------- KEY INSIGHTS ----------
 st.subheader("📌 Key Insights")
+
 st.markdown("""
 ### ✅ Major Findings
 - Tier 1 cities contribute the highest revenue.
