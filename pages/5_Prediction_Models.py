@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -16,25 +15,25 @@ def load_data():
 df = load_data()
 
 st.title("🤖 Prediction Models (Machine Learning)")
-st.divider()
 
-# --- FIX: Mapping to YOUR columns ---
-# Using Age_Group (Categorical) instead of Age (Numeric)
-# Using Average_Order_Value_AED instead of Price
-df['Repeat_Purchase_Intention'] = df['Repeat_Purchase_Intention'].astype(str).str.strip().str.title()
+# --- FIX: Mapping to YOUR columns (Age, Product_Price_INR, etc) ---
+# Data cleaning: Ensure Repeat_Purchase is clean text
+df['Repeat_Purchase'] = df['Repeat_Purchase'].astype(str).str.strip().str.title()
 
-features = ['Age_Group', 'Average_Order_Value_AED', 'Discount_Sensitivity_Score', 'Actual_Delivery_Time_Days', 'Customer_Satisfaction_Score']
+# Use the columns present in your CSV
+features = ['Age', 'Product_Price_INR', 'Discount_Applied_%', 'Delivery_Time_Days', 'Satisfaction_Score']
 X = df[features].copy()
 
-# Encode everything since your data is categorical
+# Encode Categorical data
 le = LabelEncoder()
-X['Age_Group'] = le.fit_transform(df['Age_Group'].astype(str))
-X['City'] = le.fit_transform(df['City'].astype(str))
+X['City_Tier'] = le.fit_transform(df['City_Tier'].astype(str))
+X['Acquisition_Channel'] = le.fit_transform(df['Acquisition_Channel'].astype(str))
 
-y = df['Repeat_Purchase_Intention'].apply(lambda x: 1 if x == 'Yes' else 0)
+# Map Repeat_Purchase: Yes -> 1, No -> 0
+y = df['Repeat_Purchase'].apply(lambda x: 1 if x == 'Yes' else 0)
 
 if len(y.unique()) <= 1:
-    st.error("⚠️ Data contains only one outcome for Repeat Purchase.")
+    st.error("⚠️ The model cannot train because your data only shows one type of customer (e.g., all 'Yes').")
     st.stop()
 
 # Train Model
@@ -49,6 +48,7 @@ st.metric("Prediction Accuracy", f"{accuracy * 100:.1f}%")
 
 # Feature Importance
 importances = rf_model.feature_importances_
-feat_df = pd.DataFrame({'Feature': features, 'Importance': importances}).sort_values(by='Importance', ascending=True)
-fig_feat = px.bar(feat_df, x='Importance', y='Feature', orientation='h', title="Top Drivers of Retention")
+feat_df = pd.DataFrame({'Feature': features + ['City_Tier', 'Acquisition_Channel'], 'Importance': importances})
+feat_df = feat_df.sort_values(by='Importance', ascending=True)
+fig_feat = px.bar(feat_df, x='Importance', y='Feature', orientation='h', title="Key Drivers of Repeat Purchase")
 st.plotly_chart(fig_feat, use_container_width=True)
