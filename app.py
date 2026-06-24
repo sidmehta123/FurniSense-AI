@@ -1,34 +1,19 @@
 import streamlit as st
+import pandas as pd
 
-st.set_page_config(
-    page_title="FurniSense-AI",
-    page_icon="🛋️",
-    layout="wide"
-)
+st.set_page_config(page_title="FurniSense AI", layout="wide")
+st.title("FurniSense AI: D2C Analytics")
 
-st.title("🛋️ FurniSense-AI")
+@st.cache_data
+def load_data():
+    return pd.read_csv("D2C_Furniture_Transactions.csv")
 
-st.markdown("""
-### Data-Driven Growth Intelligence Platform for a D2C Furniture Startup
+df = load_data()
 
-This project demonstrates how analytics can support strategic decisions for a
-Direct-to-Consumer Furniture Startup operating across Tier 1 and Tier 2 Indian cities.
+st.subheader("Executive Summary")
+col1, col2, col3 = st.columns(3)
+col1.metric("Total Orders", f"{len(df):,}")
+col2.metric("Total Revenue", f"₹{df['Final_Order_Value_INR'].sum():,.0f}")
+col3.metric("Avg Satisfaction", f"{df['Satisfaction_Score'].mean():.1f}/5")
 
-### Modules Included
-
-✅ Executive Summary
-
-✅ Descriptive Analytics
-
-✅ Customer Segmentation
-
-✅ Association Rules
-
-✅ Prediction Models
-
-✅ Prescriptive Analytics
-
-✅ New Customer Scorer
-
-Use the sidebar to navigate between pages.
-""")
+st.write("### Data Preview", df.head())
